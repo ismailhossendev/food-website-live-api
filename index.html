@@ -12,12 +12,12 @@
     <!-- nav section  -->
     <nav class="navbar navbar-expand-lg bg-primary ">
         <div class="container">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand text-white fw-bold" href="./index.html">FOOD</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item ">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
@@ -38,8 +38,8 @@
               <li class="nav-item">
                 <a class="nav-link disabled">Disabled</a>
               </li>
-            </ul>
-            <div class="d-flex" role="search">
+            </ul> -->
+            <div class="d-flex ms-auto" role="search">
               <input id="src-inp" class="form-control me-2" type="search" placeholder="Search Food" aria-label="Search">
               <button id="src-btn" class="btn btn-outline-light" type="submit">Search</button>
             </div>
@@ -56,24 +56,26 @@
                 </div>
             </div>
             <div class="col-3">
-                <div class="position-relative">
-                    <div class="position-absolute top-0 end-0 border w-100 text-center">
-                        <div class="card" style="width: 18rem;">
-                            <img src="https://www.themealdb.com/images/media/meals/58oia61564916529.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                              <li class="list-group-item">Category:</li>
-                              <li class="list-group-item">Food Area:</li>
-                              <li class="list-group-item">Tag:</li>
-                            </ul>
-                            <div class="card-body">
-                              <a onclick='foodDetailsApi()' href="#" class="card-link btn btn-primary">Review In Youtube</a>
-                              <p>instractions:</p>
-                            </div>
-                          </div>
+                <div class="position-relative ">
+                    <div class="position-absolute top-0 end-0 w-100 text-center">
+                        <div class=" position-fixed " id="details-container">
+                            <!-- <div class="card" style="width: 18rem;">
+                                <img src="https://www.themealdb.com/images/media/meals/58oia61564916529.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">Category:</li>
+                                  <li class="list-group-item">Food Area:</li>
+                                  <li class="list-group-item">Tag:</li>
+                                </ul>
+                                <div class="card-body">
+                                  <a  href="#" class="card-link btn btn-primary">Review In Youtube</a>
+                                  <p>instractions:</p>
+                                </div>
+                            </div> -->
+                        </div>
                     </div>
 
                   </div>
