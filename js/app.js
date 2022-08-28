@@ -1,6 +1,6 @@
 // api 
-const mainApi = () => {
-    const url = "https://www.themealdb.com/api/json/v1/1/search.php?s="
+const mainApi = (code) => {
+    const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${code}`
     fetch(url)
         .then(res => res.json())
         .then(data => displayMain(data.meals));
@@ -20,11 +20,19 @@ const displayMain = data => {
           <h5 class="card-title">${food.strMeal}</h5>
           <h6 class="card-title">Catagory: ${food.strCategory}</h6>
           <p class="card-text">${foodIns}...</p>
-          <button class="btn btn-primary">Details</button>
+          <button  class="btn btn-primary">Details</button>
         </div>
       </div>
         `
         mainContainer.appendChild(cardDiv)
     }
 }
-mainApi()
+
+//  search sections 
+mainApi("")
+document.getElementById('src-btn').addEventListener('click', function () {
+    const srcInput = document.getElementById('src-inp').value;
+    mainApi(srcInput)
+    document.getElementById('src-inp').value = "";
+})
+

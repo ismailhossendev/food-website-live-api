@@ -39,10 +39,10 @@
                 <a class="nav-link disabled">Disabled</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search Food" aria-label="Search">
-              <button class="btn btn-outline-light" type="submit">Search</button>
-            </form>
+            <div class="d-flex" role="search">
+              <input id="src-inp" class="form-control me-2" type="search" placeholder="Search Food" aria-label="Search">
+              <button id="src-btn" class="btn btn-outline-light" type="submit">Search</button>
+            </div>
           </div>
         </div>
       </nav>
@@ -57,7 +57,24 @@
             </div>
             <div class="col-3">
                 <div class="position-relative">
-                    <div class="position-absolute top-0 end-0 border w-100 text-center">HELLO</div>
+                    <div class="position-absolute top-0 end-0 border w-100 text-center">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://www.themealdb.com/images/media/meals/58oia61564916529.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item">Category:</li>
+                              <li class="list-group-item">Food Area:</li>
+                              <li class="list-group-item">Tag:</li>
+                            </ul>
+                            <div class="card-body">
+                              <a onclick='foodDetailsApi()' href="#" class="card-link btn btn-primary">Review In Youtube</a>
+                              <p>instractions:</p>
+                            </div>
+                          </div>
+                    </div>
 
                   </div>
             </div>
